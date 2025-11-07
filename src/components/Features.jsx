@@ -35,21 +35,21 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="relative bg-white dark:bg-zinc-950">
+    <section id="features" className="relative bg-[#0B0E14] text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Care that meets you where you are</h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-300">Built for accessibility, safety, and real progress—guided by modern clinical frameworks.</p>
+          <p className="mt-3 text-white/70">Built for accessibility, safety, and real progress—guided by modern clinical frameworks.</p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (
-            <div key={f.title} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 hover:shadow-lg transition-shadow">
-              <div className="h-10 w-10 rounded-xl bg-indigo-600/10 text-indigo-600 grid place-items-center">
+            <div key={f.title} className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition-colors">
+              <div className="h-10 w-10 rounded-xl bg-indigo-500/15 text-indigo-400 grid place-items-center">
                 {f.icon}
               </div>
               <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{f.desc}</p>
+              <p className="mt-2 text-sm text-white/70">{f.desc}</p>
             </div>
           ))}
         </div>

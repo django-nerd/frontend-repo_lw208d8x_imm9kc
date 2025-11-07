@@ -43,18 +43,18 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="bg-zinc-50 dark:bg-zinc-900">
+    <section id="pricing" className="bg-[#0B0E14] text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Simple, transparent pricing</h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-300">Start with a 7-day free trial. Cancel anytime.</p>
+          <p className="mt-3 text-white/70">Start with a 7-day free trial. Cancel anytime.</p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl border p-6 ${plan.highlight ? 'border-indigo-600 shadow-xl ring-1 ring-indigo-600/10 bg-white' : 'border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-950/70'}`}
+              className={`relative rounded-2xl border p-6 ${plan.highlight ? 'border-indigo-500 shadow-xl ring-1 ring-indigo-500/20 bg-white/5' : 'border-white/10 bg-white/5'} backdrop-blur`}
             >
               {plan.highlight && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-indigo-600 px-3 py-1 text-xs font-medium text-white shadow">Best for starting</span>
@@ -62,11 +62,11 @@ export default function Pricing() {
               <h3 className="text-lg font-semibold">{plan.name}</h3>
               <div className="mt-3 flex items-end gap-1">
                 <span className="text-3xl font-bold">{plan.price}</span>
-                <span className="text-zinc-600 dark:text-zinc-400">{plan.period}</span>
+                <span className="text-white/70">{plan.period}</span>
               </div>
               <ul className="mt-6 space-y-3">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
+                  <li key={f} className="flex items-center gap-2 text-sm text-white/85">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-indigo-600 text-white">
                       <Check size={14} />
                     </span>
@@ -74,7 +74,7 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <button className={`mt-8 w-full rounded-xl px-4 py-2 font-medium shadow-sm ${plan.highlight ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-zinc-900 text-white hover:bg-black dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100'}`}>
+              <button className={`mt-8 w-full rounded-xl px-4 py-2 font-medium shadow-sm ${plan.highlight ? 'bg-indigo-600 text-white hover:bg-indigo-500' : 'bg-white text-zinc-900 hover:bg-zinc-100'}`}>
                 {plan.cta}
               </button>
             </div>
