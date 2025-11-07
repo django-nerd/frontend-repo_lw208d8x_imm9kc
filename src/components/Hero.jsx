@@ -4,13 +4,13 @@ import { Shield, Mic, MessageCircle, Sparkles, Star } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-[#0B0E14] text-white">
-      {/* 3D Scene */}
+      {/* 3D Scene - updated with provided Spline animation */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Top gradient and vignette overlays (non-blocking) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0B0E14]/20 via-[#0B0E14]/40 to-[#0B0E14]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0B0E14]/10 via-[#0B0E14]/35 to-[#0B0E14]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-28">
@@ -28,11 +28,11 @@ export default function Hero() {
 
           {/* Primary CTAs */}
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <a href="#pricing" className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-white font-medium shadow-lg shadow-indigo-600/30 hover:bg-indigo-500">
-              Start Free Trial
+            <a href="#chat" className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-white font-medium shadow-lg shadow-indigo-600/30 hover:bg-indigo-500">
+              Open Chat
             </a>
-            <a href="#features" className="inline-flex items-center justify-center rounded-xl bg-white/10 px-6 py-3 text-white/90 font-medium ring-1 ring-white/15 hover:bg-white/15">
-              Explore Features
+            <a href="#voice" className="inline-flex items-center justify-center rounded-xl bg-white/10 px-6 py-3 text-white/90 font-medium ring-1 ring-white/15 hover:bg-white/15">
+              Try Voice Assistant
             </a>
           </div>
 

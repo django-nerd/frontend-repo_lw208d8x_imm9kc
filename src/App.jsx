@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
 import CTA from './components/CTA';
+import Chat from './components/Chat';
+import Voice from './components/Voice';
 import { Mail, Twitter, Shield, BookOpen } from 'lucide-react';
 
 function Footer() {
@@ -23,7 +25,7 @@ function Footer() {
             <ul className="mt-3 space-y-2 text-sm text-white/70">
               <li><a href="#features" className="hover:text-white">Features</a></li>
               <li><a href="#pricing" className="hover:text-white">Pricing</a></li>
-              <li><a href="#" className="hover:text-white flex items-center gap-2"><BookOpen size={14}/>Resources</a></li>
+              <li><a href="#chat" className="hover:text-white flex items-center gap-2"><BookOpen size={14}/>Resources</a></li>
             </ul>
           </div>
 
@@ -65,6 +67,8 @@ export default function App() {
       <main>
         <Hero />
         <Features />
+        <Chat />
+        <Voice />
         <Pricing />
         <CTA />
       </main>
